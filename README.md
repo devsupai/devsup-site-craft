@@ -92,7 +92,7 @@ Copiez le contenu de `SKILL.md` dans vos instructions de projet ou dans votre fi
 │   ├── PROJET.template.md    # Template de cadrage stratégique et personas
 │   ├── DESIGN.template.md    # Template de design system et tokens CSS
 │   ├── AGENTS.template.md    # Template du règlement intérieur du chantier
-│   └── quality-gates.md      # Grille d'évaluation des preuves tangibles
+│   └── quality-gates.template.md # Grille d'évaluation des preuves tangibles
 └── examples/
     └── artisan-electricien/  # Exemple complet d'un projet mené avec la méthode
         ├── PROJET.md
