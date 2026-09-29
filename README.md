@@ -47,7 +47,7 @@ Aucun site n'est mis en ligne sans validation de la matrice de conformité :
 
 1. **Cadrage métier** (Les 6 questions fondamentales et formalisation de `PROJET.md`).
 2. **Contenu & Référencement** (Mots-clés locaux, une intention par page, FAQ réelle).
-3. **Direction artistique** (Inspirations, palette contrastée, formalisation de `DESIGN.md`).
+3. **Direction artistique & Mockups** (Inspirations, palette contrastée, directives anti-clichés IA, validation sur maquette/mockup, formalisation de `DESIGN.md`).
 4. **Stack & Règles** (Choix technique adapté, `AGENTS.md` et initialisation Git).
 5. **Construction par étapes CROC** (Fondations, en-tête, accueil section par section, pages secondaires).
 6. **Fonctionnalités sensibles** (Formulaires avec honeypot, base sécurisée J1, Stripe Checkout).

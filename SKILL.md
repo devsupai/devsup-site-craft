@@ -120,10 +120,16 @@ L'agent ouvre la phase visuelle en offrant trois portes d'entrée au choix de l'
 3. **Option C (Feuille blanche & Propositions sur-mesure) :** Si l'utilisateur n'a pas d'idée, l'agent prend l'initiative et propose 3 ambiances clés adaptées au secteur d'activité (ex: Sobre & Rassurante, Moderne & Technique, ou Artisanale & Chaleureuse), avec leur palette et leur duo de polices.
 
 Règles immuables du design system :
+* **Directives Anti-Clichés IA (Anti-Slop) :**
+  * *Bannir le « tout centré » :* Aligner le texte naturellement à gauche (`text-left`) et créer des compositions asymétriques vivantes (ex: 40% titre percutant / 60% contenu).
+  * *Rythme & Pleine largeur :* Ne pas tout enfermer dans une colonne étroite ; alterner les largeurs (zones de texte aérées et sections immersives `w-full`).
+  * *Supprimer l'inflation des cartes (« Card Soup ») :* Ne pas enfermer chaque texte dans une boîte arrondie ; privilégier des listes typographiques épurées avec séparateurs discrets (`border-t`) et grands numéros (`01`, `02`).
+  * *Zéro pilule badge superflue :* Remplacer les badges arrondis au-dessus des titres par des labels typographiques sobres sans boîte.
 * Choix d'un duo de polices (une police affirmée pour les titres, une police très lisible pour le corps de texte).
 * Échelle d'espacement mathématique régulière (4, 8, 16, 24, 32, 48, 64 px).
 * Approche Mobile-First obligatoire (ergonomie pensée d'abord pour un écran de smartphone de 375px, zones tactiles >= 44px).
 * Zéro emoji (bannissement des symboles emoji, usage exclusif d'icônes vectorielles SVG).
+* **Validation préalable sur Mockup :** Avant d'écrire le code de tout le site, l'agent présente un mockup visuel ou un prototype léger de la page d'accueil (Hero + section clé) pour que l'utilisateur valide le style réel en conditions directes sans risquer de refonte lourde.
 * Formalisation et validation dans `DESIGN.md`.
 
 ---
@@ -136,9 +142,9 @@ Règles immuables du design system :
 ---
 
 ### Étape 5 : Construction par petites étapes (Méthode CROC)
-L'agent découpe le travail en micro-tâches ordonnées. Pour chaque tâche, il applique la structure CROC :
+L'agent découpe le travail en micro-tâches ordonnées. Il commence par faire valider le mockup/prototype de la page d'accueil, puis décline les briques une à une selon la structure CROC :
 * **C (Contexte) :** Où en est le projet et quels fichiers consulter.
-* **R (Résultat attendu) :** Comportement précis et affichage attendu.
+* **R (Résultat attendu) :** Comportement précis et affichage attendu (en appliquant les règles anti-slop).
 * **O (Ontraintes / Contraintes) :** Fichiers intouchables, accessibilité clavier, mobile.
 * **C (Contrôle) :** Commande de compilation, test à 375px et 1440px.
 

@@ -16,7 +16,29 @@ Une fois ce document validé, l'agent d'IA a l'interdiction stricte d'improviser
 
 ---
 
-## 2. Palette Chromatique & Tokens de Couleur
+## 2. Directives Anti-Clichés IA (Anti-Slop Design)
+
+Pour éliminer l'aspect « généré par IA » et produire un rendu digne d'un web designer chevronné, les règles suivantes sont formellement imposées :
+
+1. **Bannir le « tout centré » :**
+   * Interdiction d'aligner l'ensemble du site au centre (`text-center`).
+   * Aligner le texte courant et les explications naturellement à gauche (`text-left`).
+   * Privilégier des compositions asymétriques vivantes (ex: 40% grand titre percutant à gauche / 60% contenu et services à droite).
+2. **Varier le rythme et exploiter la pleine largeur :**
+   * Interdiction d'enfermer toutes les sections dans la même colonne étroite (`max-w-3xl`).
+   * Alterner entre des conteneurs de texte aérés, des sections en pleine largeur (`w-full`) avec des fonds alternés (blanc pur, ardoise subtil, gris doux), et des zones immersives à 1200-1400px.
+3. **Bannir l'inflation des boîtes et des cartes (« Card Soup ») :**
+   * Interdiction d'enfermer chaque texte, chaque service ou chaque paragraphe dans une boîte avec bordure et ombre (`rounded-2xl border p-6`).
+   * Privilégier des **listes typographiques épurées** : simples séparateurs horizontaux discrets (`border-t border-slate-200`), grands numéros élégants (`01`, `02`, `03`) et de larges respirations.
+4. **Supprimer les pilules d'indication superflues :**
+   * Bannir les petits badges arrondis flottant au-dessus de chaque titre (ex: `[ NOS SERVICES ]`, `[ TÉMOIGNAGES ]`).
+   * Utiliser un label typographique sobre sans boîte (`text-xs font-semibold tracking-widest text-slate-400 uppercase`) ou laisser le titre principal s'exprimer directement.
+5. **Validation préalable sur Mockup :**
+   * Avant de développer tout le site, validation obligatoire d'un mockup visuel ou prototype d'une page clé (accueil) pour valider l'ambiance et la composition sans risque de refonte lourde.
+
+---
+
+## 3. Palette Chromatique & Tokens de Couleur
 
 Tous les couples texte/fond doivent respecter un ratio de contraste supérieur ou égal à **4.5:1** (norme WCAG AA).
 
