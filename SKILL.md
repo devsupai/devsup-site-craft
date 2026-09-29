@@ -94,7 +94,7 @@ L'agent interdit tout code et pose les questions **l'une après l'autre** :
 * **Question 2 (Différenciation) :** *« Qu'est-ce qui vous distingue de vos concurrents ? (Par exemple : rapidité d'intervention, devis gratuit, savoir-faire artisanal, tarifs transparents...) »*
 * **Question 3 (Objectif numéro 1) :** *« Quel est l'objectif prioritaire numéro un de ce site ? Quand un visiteur arrive, quelle est la première action que vous voulez qu'il fasse : vous appeler au téléphone, remplir un formulaire de devis, ou réserver ? »*
 * **Question 4 (Le client idéal) :** *« Qui est votre client type, et dans quelle situation se trouve-t-il quand il cherche votre site ? (Gardez en tête qu'il consultera très probablement la page depuis son smartphone). »*
-* **Question 5 (Références & Goûts) :** *« Avez-vous 2 ou 3 sites internet de votre secteur (ou d'un autre domaine) dont vous appréciez le style, ou au contraire des sites que vous trouvez décevants ? »*
+* **Question 5 (Références & Goûts) :** *« Avez-vous 1 ou 2 sites internet dont vous aimez le style (dans votre secteur ou un autre domaine) ? Si oui, vous pouvez me coller les liens. Si vous n'en avez pas en tête, aucun souci : dites-le-moi simplement, nous pourrons partir d'une simple couleur ou de mes suggestions lors de l'étape design. »*
 * **Question 6 (Ressources existantes) :** *« De quoi disposez-vous déjà pour ce projet : avez-vous un logo, de vraies photos de vos réalisations ou de votre équipe, des avis clients, ou part-on d'une feuille blanche ? »*
 
 Une fois les 6 questions répondues, l'agent génère `PROJET.md` à partir du template, présente une synthèse claire et demande validation.
@@ -110,12 +110,21 @@ Une fois les 6 questions répondues, l'agent génère `PROJET.md` à partir du t
 ---
 
 ### Étape 3 : Définir la direction artistique (DESIGN.md)
-* L'agent propose une palette de couleurs contrastée (contraste texte/fond >= 4.5:1 pour respecter l'accessibilité).
-* Choix de deux polices de caractère (une pour les titres avec du caractère, une très lisible pour les textes).
-* Échelle d'espacement mathématique (4, 8, 16, 24, 32, 48, 64 px).
-* Zéro emoji (utilisation exclusive d'icônes SVG).
-* Approche Mobile-First obligatoire (ergonomie pensée d'abord pour un écran de smartphone de 375px).
-* Génération de `DESIGN.md`.
+L'agent ouvre la phase visuelle en offrant trois portes d'entrée au choix de l'utilisateur :
+
+1. **Option A (Sites inspirants) :** Si l'utilisateur fournit 1 ou 2 liens de sites qu'il aime, l'agent analyse leur identité visuelle (typographie, générosité des espaces, dominante de couleur) pour en extraire la logique sans faire de copie servile.
+2. **Option B (Couleur dominante & Outils visuels) :** Si l'utilisateur donne simplement sa couleur préférée (ou celle de son logo), l'agent prend cette base et calcule automatiquement toute la palette harmonique :
+   * Couleur d'accentuation pour les boutons d'appel/action (contraste dynamique).
+   * Couleurs de fonds (blanc cassé, gris subtil) et couleurs de texte avec vérification formelle des ratios de contraste (>= 4.5:1, norme WCAG AA).
+   * L'agent peut aussi orienter vers des générateurs visuels gratuits comme **Coolors.co** ou **realtimecolors.com** si l'utilisateur souhaite visualiser des harmonies.
+3. **Option C (Feuille blanche & Propositions sur-mesure) :** Si l'utilisateur n'a pas d'idée, l'agent prend l'initiative et propose 3 ambiances clés adaptées au secteur d'activité (ex: Sobre & Rassurante, Moderne & Technique, ou Artisanale & Chaleureuse), avec leur palette et leur duo de polices.
+
+Règles immuables du design system :
+* Choix d'un duo de polices (une police affirmée pour les titres, une police très lisible pour le corps de texte).
+* Échelle d'espacement mathématique régulière (4, 8, 16, 24, 32, 48, 64 px).
+* Approche Mobile-First obligatoire (ergonomie pensée d'abord pour un écran de smartphone de 375px, zones tactiles >= 44px).
+* Zéro emoji (bannissement des symboles emoji, usage exclusif d'icônes vectorielles SVG).
+* Formalisation et validation dans `DESIGN.md`.
 
 ---
 
